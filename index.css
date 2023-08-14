@@ -1,0 +1,303 @@
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .login{
+            filter: brightness(50%);
+            background:url(https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            height: 95vh;
+            
+        }
+        .first_window{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 0.01px;
+            filter: brightness(200%);
+            width: 100vw;
+        }
+        .logo_image{
+            margin-top: -20px;
+            margin-left: 10vw ;
+            width: 200px;
+        }
+        .setting{
+            margin-right: 20vw;
+            margin-top: 5vh;
+        }
+        select{
+            padding: 10px  35px;
+            background-color: rgba(0, 0, 0, 0.263);
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            font-weight: 500;
+        }
+        option{
+            background-color: black;
+            color: white;
+        }
+        .btn_1{
+            margin-left: 20px ;
+        }
+        .btn{
+            padding: 10px 20px ;
+            background-color: red;
+            color: white;
+            border-radius: 5px ;
+            border: 1px solid red;
+        }
+        .btn:hover{
+            background-color: #be1212;
+            border:#be1212
+        }
+        
+        .mid_part{
+            position: absolute;
+            top: 35%;
+            color: white;
+            /* justify-content: center; */
+            width: 100vw;
+            align-items: center;
+            text-align: center;
+        }
+        .main_line { 
+            font-size: xxx-large;
+            font-weight:900; 
+            display: inline-block;
+            transform:  scale(1.5); 
+         }
+         .m_line{
+            font-size: xxx-large;
+            font-weight:900;
+        }
+        .s_line{
+            font-size: x-large;
+            font-weight: 600;
+            font-family:'Segoe UI';
+        }
+        .sub_line{
+            font-size: x-large;
+            font-weight: 600;
+            font-family:'Segoe UI';
+        }
+        input{
+            padding : 10px 40px ;
+            background-color: rgba(0, 0, 0, 0.593);
+            border: 1px solid white;
+            color:white
+        }
+        .search{
+            transform:  scale(1.5);
+            display: inline-block;
+             margin-top: 5vh;
+            position: relative;
+
+        } 
+        .txt{
+            margin-top: 10%;
+        }
+        .btn_1{
+            margin-left: 3px;
+            right: 1px;
+        }
+        .picture{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+        .picture div{
+            flex-wrap: wrap;
+            padding:60px 6vw ;
+        }
+        .open{
+            padding: 20px;
+            transform: scale(1.5);
+        }
+        .img img{
+            width: 32vw;
+
+        }
+        .video{
+            position: absolute;
+            right: 8%;
+            bottom: -48%;
+        }
+        .open:hover{
+            transform: scale(2);
+        }
+        .shows{
+            background-color: rgb(0, 0, 0);
+        }
+        .show_1 , .show_2{
+            justify-content: space-evenly;
+        }
+        hr , .shows hr{
+            background-color: rgba(27, 25, 25, 0.919);
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .question{
+            background-color: black;
+            padding-top:80px ;
+            padding-bottom: 70px;
+            font-size: larger;
+            
+        }
+        .question h1{
+            font-weight: 900;
+            font-size: xxx-large;
+            text-align: center;
+            padding: 15px;
+        }
+        .ques{
+            margin: 15px auto 0 auto;
+            padding: 20px;
+            width: 70vw;
+            background-color: rgb(48, 47, 47);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .ques:hover{
+            background-color: rgb(76, 72, 72);
+        }
+        .ans{
+            margin: 5px auto 0 auto;
+            padding: 20px;
+            max-width: 70vw;
+            background-color: rgba(48, 47, 47, 0.629);
+        }
+        #a1 , #a2 , #a3 , #a4 , #a5{
+            display: none;
+        }
+        .re_querry{
+            background-color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            
+        }
+        footer p{
+            padding: 20px 40px;
+            text-align: left;
+        }
+        footer select{
+            margin-left:40px ;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            color: rgba(255, 255, 255, 0.505);
+        }
+        .footer div{
+            max-width: 33vw;
+        }
+         .footer a{
+            display: flex;
+            padding: 10px 20px ;
+            min-width: 50px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+        @media only screen and ( max-width:1200px ){
+            .main_line{
+                transform: scale(1.00);
+            }
+        }
+        @media only screen and ( max-width:800px ){
+            .show_1 {
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+            }
+            .show_2{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .img img{
+                width: 80vw;
+            }
+        }
+        @media only screen and ( max-width:650px ){
+            .logo_image{
+                margin-top: 10px;
+                width: 100px;
+            }
+            .mid_part{
+                top:25%;
+            }
+            p{
+                padding: 10px;
+            }
+            .picture div{
+                flex-wrap: wrap;
+                padding:30px 8vw ;
+            }
+            .btn , select {
+                font-size: small;
+                padding: 8px;
+                font-weight: 150;
+            }
+            .btn_2{
+                margin-top:10px ;
+            }
+            .main_line{
+                transform: scale(1);
+            }
+            .main_line , .m_line{
+                font-size: xx-large;
+            }
+            .setting{
+                right: -15%;
+                top: -10%;
+                position: absolute;
+            }
+            .setting_1{
+                position: relative;
+
+            }
+            .sub_line , .s_line{
+                font-size: small;
+            }
+            .show_1 {
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+            }
+            .show_2{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .img img{
+                width: 80vw;
+            }
+            .search{
+             transform: scale(1);   
+            }
+            .footer div{
+                max-width: 70vw;
+            }
+            .footer div a{
+                font-size: small;
+            }
+            .footer{
+                flex-direction: column;
+            }
+            input{
+                padding: 10px 30px;
+            }
+        }
