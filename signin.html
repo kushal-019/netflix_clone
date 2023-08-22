@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          class="logo_image"
+          src="netflix-logo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </header>
+    <main>
+      <div class="signin">
+        <h1>Sign in</h1>
+        <input class = "input" id="email" type="email" placeholder="Email or Phone no." />
+        <p id="text_warn" class="warn">Please enter a valid email address or phone number.</p>
+        <input class = "input" id="password" type="password" placeholder="Password" />
+        <p id="pass_warn" class="warn">Your password must contain between 4 and 60 characters.</p>
+        <p class="wrong">Email or password is incorrect</p>
+        <button class="btn">sign in</button>
+        <div>
+            <label><input type="checkbox"> remember me</label>
+          <a href="">need help?</a>
+        </div>
+        <div class="text_msg">
+            <p>New to Netflix? <span>Sign up now.</span></p>
+            <p>
+              This page is protected by Google reCAPTCHA to ensure you're not a bot.
+              Learn more.
+            </p>
+        </div>
+        
+      </div>
+    </main>
+    <footer>
+      <p>Questions? Call 000-800-919-1694</p>
+      <div class="footer">
+        <div>
+          <a href="">FAQ</a>
+          <a href=""> Help Centre</a>
+          <a href=""> Account</a>
+          <a href="">Media Centre</a>
+          <a href=""> Investor Relations</a>
+        </div>
+        <div>
+          <a href="">Jobs</a>
+          <a href="">Ways to Watch</a>
+          <a href=""> Terms of Use</a>
+          <a href="">Privacy</a>
+          <a href="">cookie preferences</a>
+        </div>
+        <div>
+          <a href=""> Only on Netflix </a>
+          <a href=""> Contact Us</a>
+          <a href="">Speed Test</a>
+          <a href=""> Legal Notices</a>
+          <a href=""> Corporate Information</a>
+        </div>
+      </div>
+      <div class="setting setting_1">
+        <select name="" id="">
+          <option value="">English</option>
+          <option value="">Hindi</option>
+          <option value="">Tamil</option>
+        </select>
+      </div>
+      <p>Netflix India</p>
+    </footer>
+    <script>
+      // const btn = document.querySelector(".btn");
+      const btn = document.getElementsByClassName("btn")[0];
+      const email = document.querySelector("#email");
+      const password = document.querySelector("#password");
+      const text_warn = document.querySelector("#text_warn");
+      const pass_warn = document.querySelector("#pass_warn");
+      const warn = document.getElementsByClassName("warn");
+      const wrong = document.getElementsByClassName("wrong");
+
+      btn.addEventListener('click' , function(event){
+        if(email.value == '' ){
+          text_warn.style.display = 'block';
+        }
+        else{
+          text_warn.style.display = 'none';
+        }
+        if(password.value == '' ){
+         pass_warn.style.display = 'block';
+        }
+        else {
+          pass_warn.style.display = 'none';
+        }
+        if(email.value != '' || password != ''){
+
+        if(email.value == 'kgoel8451@gmail.com' && password.value == 123456){
+          window.close("signin.html");
+          window.open("home.html");
+        }
+        else{
+          wrong[0].style.display ='block';
+          wrong[1].style.display ='block';
+        }
+      }
+      });
+
+
+    </script>
+  </body>
+</html>

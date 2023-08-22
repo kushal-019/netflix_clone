@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header {
+background:url(https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+filter: brightness(70%);
+height: 110vh;
+}
+.logo_image{
+    margin-top: -20px;
+    margin-left: 10vw ;
+    width: 200px;
+}
+footer{
+    background-color: black;
+    color: white;
+    
+}
+footer p{
+    padding: 20px 40px;
+    text-align: left;
+}
+footer select{
+    margin-left:40px ;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.505);
+}
+.footer div{
+    max-width: 33vw;
+}
+ .footer a{
+    display: flex;
+    padding: 10px 20px ;
+    min-width: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+select{
+    padding: 10px  35px;
+    background-color: rgba(0, 0, 0, 0.263);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+.signin{
+    width: 25%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.763);
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    filter: brightness(200%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 80px;
+}
+.input{
+    padding : 15px 45px ;
+    background-color: rgba(61, 61, 61, 0.593);
+    border-radius: 5px;
+    border: 1px solid white;
+    color:white;
+    margin: 20px 5px;
+    width: 78%;
+}
+.signin div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btn{
+    width: 100%;
+    padding: 20px 20px ;
+    background-color: red;
+    color: white;
+    margin: 20px 5px;
+    border-radius: 5px ;
+    border: 1px solid red;
+}
+.btn:hover{
+    background-color: #be1212;
+    border: 1px solid red;
+}
+.text_msg {
+    margin: 90px auto;
+    font-size: medium;
+    
+}
+.text_msg p{
+    color: rgba(255, 255, 255, 0.401);
+}
+.warn{
+    display: none;
+    color: orange;
+}
+.wrong{
+  display:none;
+}
+/* 
+@media only screen and ( max-width:800px ){
+    .signin{
+        width: 70vw;
+        height: 80vh;
+    top: 0.1px;
+    left: 0.1px;
+    background-color: rgba(0, 0, 0, 0.879);
+    }
+    .input{
+        width: 60%;
+    }
+    .btn{
+        width: 85%;
+    }
+        
+    
+    header{
+        display: none;
+    }
+    footer{
+    position:absolute;
+    top :100vh;
+    width: 100vw;
+    }
+} */

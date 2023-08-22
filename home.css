@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+    padding: 0 2% 0 1%;
+    top: 1px;
+    background-color: rgba(0, 0, 0, 0.16);
+z-index: 2;
+}
+.logo_image{
+    margin-top: 1.5vh;
+    margin-left: 5vw ;
+    width: 100px;
+}
+.nav{
+    padding: 3vh 80px;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.bg_image{
+    background: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdxLutTb3k9HS4aNzWHlFII6F9C_-0mM1O8bqFQCpATNzq_tlvAL_mMAfRnfJB_Up6G8rnYXLj0xWpQASRYkLhzVZG1HYhnmpcrs.webp?r=c49);
+    background-size:cover;
+    position: absolute;
+    top: -0.01%; 
+    width:99.9%;
+    height: 95vh;
+    
+}
+.gg-search , .gg-bell{
+    color: white;
+    filter: brightness(200);
+    margin-top: 4vh;
+}
+.child{
+    padding: 4vh 40px;
+    color: white;
+    font-weight: 800;
+    transform: scale(1.5);
+    filter: brightness(200%);
+}
+.thumbnail_image{
+    height: 200px;
+    width: 35%;
+    z-index: 3;
+    left: 5%;
+    position: absolute;
+    top: 40%;
+}
+.thumbnail_image p{
+    padding: 25px 10px;
+    font-weight: 500;
+    font-size: larger;
+}
+.list_section{
+    background-color:black;
+    position: relative;
+    display: block;
+    padding: 2px;
+    top: 75vh;
+    width: 100vw;
+}
+.sample_video{
+    width: fit-content;
+    height:fit-content;
+}
+.videos{
+    width: 250px;
+    height: 200px;
+    z-index: 1;
+    overflow: hidden;
+}
+.videos:hover{
+    transform:scale(1.4);
+    overflow: visible;
+    z-index: 2;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content:space-around;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: -69vh;
+    
+}
+footer p{
+    padding: 20px 40px;
+    text-align: left;
+}
+footer select{
+    margin-left:40px ;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.505);
+}
+.icons{
+    padding:  20px 100px;
+}
+.icons i{
+    padding: 10px;
+}
+.icons i svg{
+transform: scale(1.5);
+}
+.footer div{
+    max-width: 33vw;
+}
+ .footer a{
+    display: flex;
+    padding: 10px 20px ;
+    min-width: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.setting{
+    margin-right: 20vw;
+    margin-top: 5vh;
+}
+select{
+    padding: 10px  35px;
+    background-color: rgba(0, 0, 0, 0.263);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}

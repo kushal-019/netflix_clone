@@ -12,8 +12,14 @@ const answer5 = document.getElementById('a5');
 
 
 open1.addEventListener("click" , function(event){
-    if(answer1.style.display =='none'){
-        answer1.style.display = 'block';
+    if(answer1.style.display != 'none'){
+        
+    answer1.style.display = 'none';
+    open1.style.transform = 'rotate(0deg)';
+    
+}
+else{
+    answer1.style.display = 'block';
 
         answer2.style.display = 'none';
         answer3.style.display = 'none';
@@ -25,11 +31,6 @@ open1.addEventListener("click" , function(event){
         open5.style.transform = 'rotate(0deg)';
 
     open1.style.transform = 'rotate(45deg)';
-    
-}
-else{
-    answer1.style.display = 'none';
-    open1.style.transform = 'rotate(0deg)';
 }
 
 });
